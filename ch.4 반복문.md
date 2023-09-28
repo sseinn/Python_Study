@@ -526,6 +526,6 @@ for items in list_of_list:
 
 ```mermaid
 graph LR
-A(*리스트) --> B(리스트[0], 리스트[1], ...)
+A(*리스트) --> B(리스트0, 리스트1, ...)
 ```
 
