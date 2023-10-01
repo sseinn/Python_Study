@@ -146,4 +146,61 @@ NotImplementedError
 코드를 실행하면 코드의 실행은 정상적으로 진행된다. 대신 구현되지 않은 부분에 들어서는 순간 NotImplementedError라는 오류를 발생시킨다. 
 따라서 구현이 안되었구나라는 걸 인지할 수 있다. 
 
+###  도전 문제
 
+1. 간단한 대화 프로그램
+```
+import datetime
+now = datetime.datetime.now()
+sentence = input("입력: ")
+
+if sentence == "안녕" or sentence == "안녕하세요.":
+    print("안녕하세요.")
+
+elif sentence =="지금 몇 시야?" or sentence == "지금 몇 시예요?":
+    print(f"지금은 {now.minute}분입니다. ")
+
+else:
+    print(sentence)
+```
+
+- 실행 결과
+```
+입력: 지금 몇 시야?
+지금은 33분입니다.
+```
+
+2. 나누어 떨어지는 숫자
+
+```
+num = int(input("정수를 입력해주세요: "))
+
+if num % 2 == 0:
+    print(f"{num}은 2로 나누어 떨어지는 숫자입니다.")
+else:
+    print(f"{num}은 2로 나누어 떨어지는 숫자가 아닙니다. ")
+
+if num % 3 == 0:
+    print(f"{num}은 3로 나누어 떨어지는 숫자입니다.")
+else:
+    print(f"{num}은 3로 나누어 떨어지는 숫자가 아닙니다. ")
+
+if num % 4 == 0:
+    print(f"{num}은 4로 나누어 떨어지는 숫자입니다.")
+else:
+    print(f"{num}은 4로 나누어 떨어지는 숫자가 아닙니다. ")
+                
+if num % 5 == 0:
+    print(f"{num}은 5로 나누어 떨어지는 숫자입니다.")
+else:
+    print(f"{num}은 5로 나누어 떨어지는 숫자가 아닙니다. ")
+```
+
+- 실행 결과
+```
+정수를 입력해주세요: 273 
+273은 2로 나누어 떨어지는 숫자가 아닙니다.
+273은 3로 나누어 떨어지는 숫자입니다.
+273은 4로 나누어 떨어지는 숫자가 아닙니다.
+273은 5로 나누어 떨어지는 숫자가 아닙니다.
+```
